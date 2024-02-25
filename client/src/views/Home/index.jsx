@@ -1,8 +1,14 @@
 
+import AppBar from '../../components/Navbar/Navbar.jsx';
+import HeroSection from '../../components/Hero/HeroSecrion.jsx';
+
+
 const Home = () => {
   return (
     <div>
-      Home page
+      <AppBar/>
+      <HeroSection/>
+      
     </div>
   )
 }
