@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-// import Navbar from './components/Navbar/Navbar'
+import Appbar from './components/Navbar/Navbar'
 import Home from './views/Home'
 import Paliamentary from './views/Paliamentary'
 import Presidential from './views/Presidential'
@@ -10,9 +10,11 @@ import './App.css'
 
 const App = () => {
   return (
+    
     <BrowserRouter>
+    <Appbar />
       <Routes>
-          <Route path="/" element={<Home />}>
+          <Route path="/">
           <Route index element={<Home />} />
           <Route path="paliamentary" element={<Paliamentary />} />
           <Route path="presidential" element={<Presidential />} />
