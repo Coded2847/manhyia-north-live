@@ -1,3 +1,4 @@
+import Searchbar from '../Searchbar' 
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IoMenu } from "react-icons/io5";
@@ -12,7 +13,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <>
+    <Searchbar/>
+    <nav className="navbars">
       <div className='logo' >
         <img src="logo.png" alt="logo"/>
         <p className="logo-text">MANHYIA NORTH LIVE</p>
@@ -29,6 +32,7 @@ const Navbar = () => {
         <Link className='elements' to="/contact" onClick={handleToggleNavbar}>Contact</Link>
       </div>
     </nav>
+    </>
   );
 };
 
